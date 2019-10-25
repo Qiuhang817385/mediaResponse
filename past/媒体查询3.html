@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>etao</title>
+	<style>
+		div.container{
+			border:2px solid #009;
+			width: 1200px;
+			margin:0px auto;
+		}
+		div.banner{
+			background-color: #09f;
+			color:#fff;
+			height: 60px;
+		}
+		div.link{
+			background-color: #090;
+			color:#fff;
+			height: 30px;
+		}
+		div.left{
+			width: 200px;
+			background-color: #ff0;
+			height: 300px;
+			float: left;
+		}
+		div.content{
+			width: 800px;
+			background-color: #09f;
+			height: 300px;
+			float: left;
+		}
+		div.right{
+			width: 200px;
+			background-color: #900;
+			height: 300px;
+			float: left;
+		}
+		div.footer{
+			clear: both;
+			background-color: #089;
+
+		}
+		@media screen and (max-width: 1200px){
+			div.container{
+				width: 1000px;
+			}
+			div.left{
+				display: none;
+			}
+		}
+		@media screen and (max-width:1000px){
+			div.container{
+				width: 800px;
+			}
+			div.left,div.right{
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="banner">banner</div>
+		<div class="link">link</div>
+		<div class="left">left</div>
+		<div class="content">content</div>
+		<div class="right">right</div>
+		<div class="footer">footer</div>
+	</div>
+</body>
+</html>

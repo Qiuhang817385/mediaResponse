@@ -1,0 +1,37 @@
+前端开发:三端开发
+1.PC端开发:
+
+   IE6/7/8 xhtml1.0+css2.1
+
+   IE9+ xhtml1.0+html5+css2.1+css3
+
+   javascript+jquery+less/sass+ajax+php/java+mysql/oracle
+
+2.移动端:webkit 
+    xhtml1.0+html5+css2.1+css3+javascript+zepto+响应式开发+less/sass+ajax+php/java+mysql/oracle
+
+3.Hybird App 移动端+底层Api
+
+-------------------------------
+移动端术语:
+1.屏幕像素密度:每英寸多少个像素点
+  标清屏 160ppi
+  高清屏 320ppi
+  
+
+2.设备缩放比:dpr
+  160ppi  1
+  320ppi  2
+
+3.css逻辑像素px和物理像素pt换算关系
+  1px=dpr^2pt;
+
+
+
+
+
+
+
+
+
+

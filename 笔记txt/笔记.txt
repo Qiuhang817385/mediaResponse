@@ -1,0 +1,32 @@
+1.html5兼容性:IE9+
+
+2.CSS3
+   --兼容性:同一个浏览器同一个内核不同版本问题
+       -webkit-
+       -ms-
+       -moz-
+       -o-
+   https://www.css88.com/book/css/properties/flex/flex.htm
+
+
+
+    --CSS3和CSS2.1区别
+       --增加新选择器
+       --增加新样式
+
+-----------------------------------------
+伪类和伪元素的区别:
+伪类根据用户动作应用样式；
+伪元素应用某个匹配元素一部分内容
+
+伪类:    :hover :active
+
+伪元素:  :first-line   :first-letter
+
+
+
+
+
+
+
+

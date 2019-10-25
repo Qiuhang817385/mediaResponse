@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			background-color: #ff0;
+		}
+		/* 方向:景观 */
+		/* portrait肖像；描写；半身雕塑像 
+		portrait：指定输出设备中的页面可见区域高度大于或等于宽度
+				当输出设备中的页面可见宽度大于高度时
+				就是宽大于高的时候
+				就是在pc或者平板上的时候
+				除portrait值情况外，都是landscape
+				取反	表示宽度小于高度的时候,就是在pc上的时候
+		*/
+		@media screen and (orientation:landscape) {
+			body{
+				background-color: #f00;
+			}
+		}
+	</style>
+</head>
+<body>
+	
+</body>
+</html>

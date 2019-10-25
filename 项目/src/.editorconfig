@@ -1,0 +1,18 @@
+# editorconfig.org
+
+root = true;
+# 这是最顶层的editorconfig文件
+
+# 所有文件的通配符,也可以*.js
+[*]
+charset = utf-8
+# 缩进尺寸
+indent_size = 4
+indent_style = space
+# 每个文件以一个空白行来结尾
+insert_final_newline = true
+# 去除换行行首的    空格    字符
+trim_trailing_whitespace=true
+
+[*.md]
+trim_trailing_whitespace=false
