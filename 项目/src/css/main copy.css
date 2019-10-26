@@ -1,0 +1,143 @@
+/*=========== 
+    默认样式 
+=========== */
+html {
+    font-size: 62.5%;
+    color: #222;
+}
+
+/* 用户选中的颜色是这个颜色 */
+::selection {
+    background-color: #b3d4fc;
+    /* 尽量给背景颜色一样 */
+    text-shadow: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*=========== 
+   工具样式 
+=========== */
+/* 任何一个元素,加上这个,就可以在父元素居中显示 */
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/* 隐藏文本,用途,超链接,用图片来代替,但是还是需要添加文本,便于seo */
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+/* 比较完善的清除浮动方式 */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* 
+清除浮动
+flex可以替代float的一种方式
+ie9还是不支持
+ */
+
+/*=========== 
+   工具样式 
+=========== */
+
+.browserupgrade {
+    margin: 0;
+    padding: 1rem;
+    background: #ccc;
+}
+
+/* ===============
+   自定义页面样式
+   =============== */
+
+body {
+    font-size: 1.2rem;
+    /* 12px */
+    /* 行距1.5-1.8之间
+    当前字体尺寸的一个倍数
+     */
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #0ae;
+    text-decoration: underline;
+}
+
+/* 网站头部 */
+
+header {
+    width: 100%;
+}
+
+/* 主要内容 */
+
+.container {
+    width: 100%;
+}
+
+/* 底部导航 */
+footer {
+    width: 100%;
+}

@@ -171,38 +171,6 @@ header .top ul li a {
     padding: 0 1.5rem;
     color: #fff;
 }
-/* 媒体查询
-
-    依次应用1,2和1,3段的样式
-    如果如下设置的话
-
-    如果1,2都设置了样式,首先使用2样式
-*/
-/* 现在的宽度,就是设备的宽度,就是布局视口的宽度,就是页面实际的宽度 */
-@media only screen and (max-width:50em) {
-    header .top ul li a {
-        padding: 0 1rem;
-    }
-    /* 800像素以下 */
-   /* 1.缩小导航左右链接的padding */
-
-}
-
-@media only screen and (min-width: 30.0625em) and (max-width:50em) {
-    /* 481-800之间 */
-    
-   
-}
-
-@media only screen and (max-width:30em) {
-    /* 屏幕小于等于480的时候,这个时候也会用到第一段样式 */
-    /* 小屏幕隐藏左边和右边两个链接 */
-    header .top .tel,
-    header .top ul li:nth-child(3),
-    header .top ul li:nth-child(4){
-        display: none;
-    }
-}
 
 /* 主导航样式 */
 header .main {
@@ -242,21 +210,7 @@ header .main ul li a.active {
     color: #ffb300;
     background-color: #f8f6f1;
 }
-@media only screen and (max-width: 50em){
-    header .main .brand{
-        width: 100%;
-        text-align: center;
-    }
 
-    header .main ul {
-        text-align: center;
-        clear: both;
-    }
-
-    header .main ul li a {
-        line-height: 4rem;
-    }
-}
 /* 主要内容 */
 
 .container {
@@ -264,35 +218,34 @@ header .main ul li a.active {
 }
 
 /* 交易信息 */
-.transaction {
+.transaction{
     width: 100%;
     background-color: #7C7365;
 }
 
-.trans-content {
+.trans-content{
     max-width: 90%;
     margin: 0 auto;
     font-size: 1.4rem;
     padding: .5rem 0 .2rem 1.5rem;
 }
 
-.trans-data,
-.trans-report {
+.trans-data, .trans-report{
     /* display: inline-block; */
     line-height: 2.0rem;
     font-size: 1.4rem;
 }
 
-.trans-data {
+.trans-data{
     float: left;
     color: #fff;
 }
 
-.trans-data span {
+.trans-data span{
     margin: .2rem 0 .2rem .5rem;
 }
 
-.trans-money {
+.trans-money{
     border-radius: .3rem;
     background-color: #F2F1F0;
     color: #FBA400;
@@ -303,74 +256,42 @@ header .main ul li a.active {
     font-size: 2rem;
 }
 
-.trans-report {
+.trans-report{
     text-align: right;
     padding: 0.5rem 1rem;
 }
 
-.trans-report a {
+.trans-report a{
     color: #fff;
 }
-@media only screen and (max-width: 30em){
-    header .main ul li a {
-        font-weight: normal;
-        padding: 0 .5rem;
-    }
 
-    header .main ul li:first-child {
-        display: none;
-    }
-
-    .trans-data {
-        color: #fff;
-        display: block;
-        text-align: center;
-        float: none;
-    }
-
-    .trans-money {
-        border: none;
-        background: transparent;
-        box-shadow: none;
-        padding: 0;
-        letter-spacing: inherit;
-        border-radius: inherit;
-        font-size: inherit;
-    }
-
-    .trans-report {
-        text-align: center;
-    }
-}
 
 /* 滚动广告区域 */
-.ad .item {
+.ad .item{
     /* background-repeat: round; */
     display: none;
 }
 
-.ad1 {
+.ad1{
     background-image: url('../img/ad001-l.png');
 }
 
-.ad2 {
+.ad2{
     background-image: url('../img/ad002-l.png');
 }
 
-.ad3 {
+.ad3{
     background-image: url('../img/ad003-l.png');
 }
 
 /* 平台特色公告  */
-.feature,
-.notice,
-.product {
+.feature, .notice, .product{
     /* 宽度默认100% */
     margin: 1rem 5rem;
     font-size: 0;
 }
 
-.feature .item {
+.feature .item{
     /*需要减掉item之间的margin-left总和（1.5rem*2)、3个item的左右border宽度和（2px*2*3），
       或者item使用 box-sizing: border-box; 就不需要减掉border */
     width: calc(33.333333333333% - 1rem - 4px);
@@ -379,11 +300,11 @@ header .main ul li a.active {
     border-radius: 2px;
 }
 
-.feature .item+.item {
+.feature .item + .item{
     margin-left: 1.5rem;
 }
 
-.feature .item h3 {
+.feature .item h3{
     width: 30%;
     float: left;
     font-size: 2rem;
@@ -391,147 +312,70 @@ header .main ul li a.active {
     margin: 2rem 0 0 2rem;
 }
 
-.feature .item ul {
+.feature .item ul{
     margin: 1rem;
     display: inline-block;
 }
 
-.feature .item ul li {
+.feature .item ul li{
     color: #999999;
     font-size: 1.4rem;
     line-height: 1.6rem;
 }
-@media only screen and (max-width: 50rem){
-    .feature, .notice, .product {
-        margin: 1rem;
-    }
-
-    .feature .item h3 {
-        width: 100%;
-        float: none;
-        text-align: center;
-        margin: .5rem 0;
-    }
-
-    .feature .item ul {
-        text-align: center;
-        margin: 0;
-        width: 100%;
-    }
-
-    .feature .item ul:last-child {
-        margin-bottom: .8rem
-    }
-
-    .feature .item ul li {
-        font-size: 1.2rem;
-        display: inline-block;
-        width: 100%;
-    }
-}
-@media only screen and (max-width: 30rem){
-    .feature .item {
-        display: block;
-        width: 100%;
-    }
-
-    .feature .item + .item {
-        margin-left: 0;
-        margin-top: 1rem;
-    }
-
-    .feature .item h3 {
-        float: left;
-        width: 30%;
-        margin: 1.7rem 0 0 0;
-    }
-
-    .feature .item ul {
-        width: 60%;
-        padding: .5rem;
-        box-sizing: border-box;
-    }
-
-    .feature .item ul:last-child {
-        margin-bottom: 0;
-    }
-}
 /* 公告栏目 */
-.notice {
+.notice{
     border: solid 2px #E6E6E6;
     border-radius: 2px;
     text-align: right;
 }
 
-.notice a:nth-child(1) {
+.notice a:nth-child(1){
     float: left;
     margin: 0 2rem 0 1rem;
 }
 
-.notice a:nth-child(1):before {
+.notice a:nth-child(1):before{
     content: '最新公告';
     color: #AAAAAA;
     margin: 0 2rem 0 0;
 }
 
-.notice a {
+.notice a{
     font-size: 1.4rem;
     padding: .5rem 1rem;
     line-height: 1.8rem;
     display: inline-block;
 }
 
-.notice a:hover {
+.notice a:hover{
     text-decoration: none;
 }
 
-.notice span {
+.notice span{
     color: #AAAAAA;
     font-size: 1.2rem;
 }
 
-.notice .more {
+.notice .more{
     display: inline-block;
     text-align: right;
     color: #F90;
     padding: .5rem 2rem;
 }
 
-.notice .more:hover {
+.notice .more:hover{
     color: #FF7F27;
 }
-@media only screen and (max-width:30rem){
-    .notice a:nth-child(1) {
-        margin: 0;
-        padding: 0.5rem;
-    }
 
-    .notice a:nth-child(1):before {
-        margin: 0.2rem;
-    }
-
-    .notice span {
-        display: none;
-    }
-
-    .notice .more {
-        padding: 0;
-        margin: 0.5rem;
-    }
-
-    .notice a {
-        font-size: 1.2rem;
-    }
-}
 
 /* 产品区域 */
-.product {
+.product{
     border: solid 2px #E6E6E6;
     border-radius: 2px;
     border-top: solid 2px #FF7F27;
 }
 
-.product h2 {
+.product h2{
     font-size: 2.2rem;
     width: 30%;
     text-align: center;
@@ -542,7 +386,7 @@ header .main ul li a.active {
     box-sizing: border-box;
 }
 
-.product h2 em {
+.product h2 em{
     display: block;
     width: 100%;
     padding: .1rem;
@@ -550,12 +394,12 @@ header .main ul li a.active {
     font-size: 1.6rem;
 }
 
-.product .product-content {
+.product .product-content{
     display: inline-block;
     width: 70%;
 }
 
-.product h3 {
+.product h3{
     font-size: 2rem;
     width: 20%;
     float: left;
@@ -564,17 +408,14 @@ header .main ul li a.active {
     text-align: center;
 }
 
-.product h3,
-.info,
-.buy,
-.buy-disabled {
+.product h3,.info,.buy,.buy-disabled{
     border-left: solid 1px #E6E6E6;
     border-bottom: solid 1px #E6E6E6;
     height: 7rem;
     box-sizing: border-box;
 }
 
-.product .info p {
+.product .info p{
     float: left;
     width: 45%;
     display: block;
@@ -582,12 +423,12 @@ header .main ul li a.active {
     text-align: center;
 }
 
-.product h3 {
+.product h3{
     font-size: 2rem;
     display: inline-block;
 }
 
-.product .info {
+.product .info{
     margin: .5rem 1rem;
     font-size: 1.6rem;
     width: 60%;
@@ -595,8 +436,7 @@ header .main ul li a.active {
     margin: 0;
 }
 
-.product .buy,
-.buy-disabled {
+.product .buy,.buy-disabled{
     font-size: 1.6rem;
     float: left;
     width: calc(20%);
@@ -606,7 +446,7 @@ header .main ul li a.active {
     padding: 2rem 0;
 }
 
-.product .buy a {
+.product .buy a{
     display: inline-block;
     width: 90%;
     background-color: #F90;
@@ -615,11 +455,11 @@ header .main ul li a.active {
     text-decoration: none;
 }
 
-.product .buy a:hover {
+.product .buy a:hover{
     background-color: #FF7F27;
 }
 
-.product .buy-disabled a {
+.product .buy-disabled a{
     display: inline-block;
     width: 90%;
     background-color: #CCCCCC;
@@ -629,86 +469,21 @@ header .main ul li a.active {
     cursor: not-allowed;
 }
 
-.product .year-rate,
-.money {
+.product .year-rate,.money{
     font-size: 2.4rem;
     color: #F90;
     margin: 0 .5rem;
 }
-@media only screen and (max-width:50rem){
-    .product h2 {
-        width: 100%;
-        padding: 0;
-        margin: .5rem;
-        font-size: 1.6rem;
-    }
 
-    .product h2 em {
-        display: inline-block;
-        width: auto;
-        font-size: 1.4rem;
-    }
 
-    .product .product-content {
-        width: 100%;
-    }
-
-    .product h3, .info, .buy, .buy-disabled {
-        border-top: solid 1px #E6E6E6;
-        border-left: none;
-        border-bottom: none;
-    }
-
-    .product .info, .buy, .buy-disabled {
-        border-left: solid 1px #E6E6E6;
-        border-bottom: solid 1px #E6E6E6;
-    }
-}
-
-@media only screen and (max-width:30rem){
-    .product h3, .info, .buy, .buy-disabled {
-        border-bottom: solid 1px #E6E6E6;
-        width: 30%;
-    }
-
-    .product .info, .buy, .buy-disabled {
-        width: 70%;
-    }
-
-    .product .buy, .buy-disabled {
-        border-left: none;
-        border-top: none;
-        width: 100%;
-        height: auto;
-        padding: .5rem;
-    }
-
-    .product .info p {
-        font-size: 1.2rem;
-    }
-
-    .product .year-rate, .money {
-        font-size: 1.6rem;
-        margin-left: -1rem;
-    }
-
-    .product h3, .info, .buy, .buy-disabled {
-    height: 5.5rem;
-    }
-
-    .product h3 {
-    padding-top: 1rem;
-    }
-}
-
-.invest-duration {
+.invest-duration{
     color: #F90;
     font-size: 2.5rem;
     padding: 0 .5rem;
     font-weight: normal;
 }
 
-.invest-scope {
+.invest-scope{
     text-align: center;
     color: #999999;
     display: block;
@@ -718,13 +493,13 @@ header .main ul li a.active {
 
 
 /* 帮助板块 */
-.help {
+.help{
     width: 100%;
     border-top: solid 2px #E6E6E6;
     border-bottom: solid 2px #E6E6E6;
 }
 
-.help .brand {
+.help .brand{
     background-image: url('../../src/img/logo@1x.png');
     float: left;
     height: 35px;
@@ -733,7 +508,7 @@ header .main ul li a.active {
     box-sizing: border-box;
 }
 
-.help ul {
+.help ul{
     float: left;
     width: calc(20% - 30px - 3rem);
     padding-bottom: .5rem;
@@ -741,56 +516,27 @@ header .main ul li a.active {
     margin-bottom: 2rem;
 }
 
-.help ul:nth-child(2) {
+.help ul:nth-child(2){
     padding-left: 4rem;
 }
 
-.help li {
+.help li{
     box-sizing: border-box;
 }
 
-.help ul li:first-child {
+.help ul li:first-child{
     font-size: 1.5rem;
     color: #000;
     line-height: 2rem;
 }
 
-.help ul li+li {
+.help ul li+li{
     font-size: 1.4rem;
     margin: .6rem 0 0 .2rem;
     color: #666666;
     line-height: 1.6rem;
 }
 
-@media only screen and (max-width: 30rem){
-    .help-content{
-        padding: 0 1rem;
-    }
-
-    .help .brand {
-        display: none;
-    }
-
-    .help ul:nth-child(2) {
-        padding: 0;
-    }
-
-    .help ul {
-        margin-top: 1rem;
-        width: 20%;
-    }
-
-    .help ul li:first-child {
-        font-size: 1.2rem;
-    }
-
-    .help ul li+li {
-        font-size: 1.2rem;
-        margin: .6rem 0 0 0;
-    }
-
-
-}
 
 
 
@@ -868,18 +614,4 @@ footer p {
     color: #666;
     font-size: 1.2rem;
     margin: 2rem auto;
-}
-
-@media only screen and (max-width:30rem){
-    footer ul {
-        width: 90%;
-    }
-
-    footer ul li {
-        line-height: 2.2rem;
-    }
-
-    footer p {
-        margin: 1rem;
-    }
 }
