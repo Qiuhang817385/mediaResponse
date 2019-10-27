@@ -345,8 +345,8 @@ header .main ul li a.active {
 
 /* 滚动广告区域 */
 .ad .item {
-    /* background-repeat: round; */
-    display: none;
+    background-repeat: round;
+    /* display: none; */
 }
 
 .ad1 {
